@@ -27,11 +27,16 @@
             
             <!-- Right column: Photo -->
             <div class="order-first md:order-last">
-                <div class="relative rounded-lg overflow-hidden shadow-xl h-96 w-full">
+                <div class="relative rounded-lg overflow-hidden shadow-xl h-96 w-full group">
                     <img 
-                        src="/path/to/your-photo.jpg" 
+                        src="/img/icon-about.png" 
                         alt="[Tu Nombre]" 
-                        class="w-full h-full object-cover"
+                        class="w-full h-full transition-opacity duration-500 delay-100 opacity-100 hover:opacity-0"
+                    />
+                    <img 
+                        src="/img/image-sobreMi.png" 
+                        alt="[Tu Nombre]" 
+                        class="w-full h-full transition-opacity duration-500 delay-50 opacity-0 hover:opacity-100 absolute inset-0"
                     />
                 </div>
             </div>
