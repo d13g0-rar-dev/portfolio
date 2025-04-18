@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "astro": "^5.6.1",
-    "portfolio": "file:"
+    "portfolio": "file:",
+    "taos": "^1.0.5"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^6.0.2",

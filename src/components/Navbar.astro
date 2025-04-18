@@ -2,7 +2,7 @@
 
 ---
 <header>
-    <nav class="bg-white border-b border-blue-100 shadow-sm">
+    <nav class="fixed top-0 left-0 right-0 z-20 bg-white border-b border-blue-100 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex justify-between h-16 items-center">
             <!-- Logo / Nombre -->
@@ -12,10 +12,10 @@
       
             <!-- Links -->
             <div class="space-x-6">
-                <a href="#sobre-mi" class="nav-link">Sobre mí</a>
-                <a href="#habilidades" class="nav-link">Habilidades</a>
-                <a href="#proyectos" class="nav-link">Proyectos</a>
-                <a href="#contacto" class="nav-link">Contacto</a>
+                <a href="#sobre-mi" class="nav-link" onclick="scrollIntoView('sobre-mi')">Sobre mí</a>
+                <a href="#habilidades" class="nav-link" onclick="scrollIntoView('habilidades')">Habilidades</a>
+                <a href="#proyectos" class="nav-link" onclick="scrollIntoView('proyectos')">Proyectos</a>
+                <a href="#contacto" class="nav-link" onclick="scrollIntoView('contacto')">Contacto</a>
             </div>
           </div>
         </div>
