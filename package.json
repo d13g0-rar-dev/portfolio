@@ -9,8 +9,18 @@
     "astro": "astro"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@astrojs/tailwind": "^6.0.2",
     "astro": "^5.6.1",
+=======
+    "astro": "^5.6.1",
+    "portfolio": "file:",
+    "taos": "^1.0.5"
+  },
+  "devDependencies": {
+    "@astrojs/tailwind": "^6.0.2",
+    "standard": "^17.1.2",
+>>>>>>> origin/master
     "tailwindcss": "^3.4.17"
   }
 }

@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.nav-link {
+  @apply text-blue-500 hover:text-blue-700 font-medium transition-colors duration-200;
+}
+
+.svg {
+  @apply w-6 h-6;
+}
+
+@keyframes typingLoop {
+  0% {
+    width: 0;
+  }
+  40% {
+    width: 100%;
+  }
+  60% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.typing-loop {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 1;
+  border-right: 2px solid #14b4ff;
+  animation:
+    typingLoop 4s steps(28, end) infinite,
+    blink 1s step-end infinite;
+  max-width: fit-content;
+}
+
+
+
+
