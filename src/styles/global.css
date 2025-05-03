@@ -15,12 +15,15 @@
   0% {
     width: 0;
   }
+
   40% {
     width: 100%;
   }
+
   60% {
     width: 100%;
   }
+
   100% {
     width: 0;
   }
@@ -33,17 +36,59 @@
 }
 
 .typing-loop {
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  line-height: 1;
-  border-right: 2px solid #14b4ff;
-  animation:
-    typingLoop 4s steps(28, end) infinite,
-    blink 1s step-end infinite;
-  max-width: fit-content;
+  @apply relative inline-block text-2xl text-gray-700 uppercase font-bold min-w-[16ch] min-h-[1.5em] after:content-[''] after:inline-block after:w-[2px] after:h-[1em] after:bg-gray-700 after:ml-1 after:animate-blink after:align-bottom
 }
 
+.submit_button {
+  @apply border border-gray-300 rounded-lg p-2 bg-blue-500 text-white hover:bg-blue-600;
+}
 
+.skill_card {
+  @apply flex flex-col items-center justify-center border border-black rounded-lg p-4 w-40 h-40 transition-transform hover:scale-110 cursor-pointer;
+}
 
+@layer utilities {
+  .mask-fade-top {
+    -webkit-mask-image: linear-gradient(to top, black 0%, transparent 150%);
+    mask-image: linear-gradient(to top, black 0%, transparent 150%);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+  }
 
+  .animate-reveal-top {
+    animation: reveal-mask-top 2s ease forwards;
+  }
+
+  @keyframes reveal-mask-top {
+    from {
+      -webkit-mask-position: 0% 100%;
+              mask-position: 0% 100%;
+    }
+    to {
+      -webkit-mask-position: 100% 100%;
+              mask-position: 100% 100%;
+    }
+  }
+
+  .mask-fade-bottom {
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 150%);
+    mask-image: linear-gradient(to bottom, black 0%, transparent 150%);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+  }
+
+  .animate-reveal-bottom {
+    animation: reveal-mask-bottom 2s ease forwards;
+  }
+
+  @keyframes reveal-mask-bottom {
+    from {
+      -webkit-mask-position: 0% 0%;
+              mask-position: 0% 0%;
+    }
+    to {
+      -webkit-mask-position: 100% 0%;
+              mask-position: 100% 0%;
+    }
+  }
+}
