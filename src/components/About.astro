@@ -14,9 +14,9 @@
         letteringElement.innerHTML += texto.charAt(i);
       }
       i++;
-      setTimeout(escribirTexto, 50); // Ajusta la velocidad de escritura aquí (en milisegundos)
+      setTimeout(escribirTexto, 50);
     } else {
-      setTimeout(borrarTexto, 2000); // Espera 2 segundos antes de comenzar a borrar
+      setTimeout(borrarTexto, 2000);
     }
   }
 
@@ -27,20 +27,18 @@
         letteringElement.innerHTML = texto.substring(0, i - 1);
       }
       i--;
-      setTimeout(borrarTexto, 50); // Ajusta la velocidad de borrado aquí (en milisegundos)
+      setTimeout(borrarTexto, 50);
     } else {
-      setTimeout(escribirTexto, 0); // Espera 2 segundos antes de comenzar a escribir nuevamente
+      setTimeout(escribirTexto, 0);
     }
   }
 
-  escribirTexto(); // Inicia el proceso de escritura al cargar la página
+  escribirTexto();
 </script>
 
-<section id="sobre-mi" class="pt-16">
+<section id="sobre-mi" class="py-16">
   <div class="mx-full my-16 px-4 sm:px-6 lg:px-8">
-    <!-- Two-column grid layout -->
     <div class="flex flex-row justify-between gap-8 items-center">
-      <!-- Left column: Personal information -->
       <div class="space-y-6">
         <h2 class="text-3xl font-bold text-gray-900">
           ¡Hola, soy <br /><strong>Diego Sepulveda</strong>!
@@ -63,8 +61,6 @@
           </p>
         </div>
       </div>
-
-      <!-- Right column: Photo -->
       <img
         src="/img/icon-diego.png"
         alt="Imagen de Diego Sepulveda Desarrollador Web"
